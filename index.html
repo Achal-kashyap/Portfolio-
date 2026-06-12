@@ -9,17 +9,37 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani', sans-serqif;
     background: #07001a;
     color: #f0d0ff;
     overflow-x: hidden;
     min-height: 100vh;
   }
-
+    .btn-glow {
+      display: inline-block;
+      padding: 14px 36px;
+      border: 2px solid #a855f7;
+      border-radius: 50px;
+      background: transparent;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: .8rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background .3s, box-shadow .3s;
+      text-decoration: none;
+    }
+    .btn-glow:hover {
+      background: rgba(168,85,247,.2);
+      box-shadow: 0 0 30px rgba(168,85,247,.6);
+    }
+        .hero-cta { animation: fade-in-up .8s .6s ease both; }
   /* Scrollbar */
   ::-webkit-scrollbar { width: 5px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: linear-gradient(#ff50c8, #9b50ff); border-radius: 3px; }
+  
 
   /* -------- ANIMATIONS -------- */
   @keyframes shimmer {
@@ -679,6 +699,23 @@
           <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
         </div>
       </div>
+      
+      <div class="projects-grid">
+      <div class="glass proj-card">
+        <div class="proj-icon">🤖</div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">⚙</a>
+          <a href="#" class="proj-link">↗</a>
+        </div>
+        <h3>Robotics project</h3>
+        <p>I made a radar System project by electrical and programming concept for security purpose and also executes in school science model exhibition and got first prize for that</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Arduino</span><span class="tech-tag">Phython</span><span class="tech-tag">sensors</span>
+        </div>
+      </div> 
+    <div class="hero-cta" align="center">
+      <a href="https://drive.google.com/file/d/1geAG8MtIhJ9bolwxEJziX0n1dAp-U3ub/view?usp=drivesdk" align="center" class="btn-glow">Review Robotics project</a>
+    </div><br>
       <div class="glass proj-card">
         <div class="proj-icon">📊</div>
         <div class="proj-links">
